@@ -14,7 +14,7 @@ function exit() {
 }
 
 try {
-  exec("solc --bin --abi --overwrite "+file+".sol -o .run_solidity");
+  exec("solc --bin --abi --overwrite "+file+" -o .run_solidity");
 } catch (e) {
   exit();
 }
